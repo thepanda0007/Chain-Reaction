@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="everything">
+      <div>
+        <h1 style="text-align: center">
+          <span id="chain" class="green">Chain</span>
+          <span id="reaction" class="yellow">Reaction</span>
+        </h1>
+        <h2 style="text-align: center">
+          Turn :
+          <div id="turn" class="blue">blue</div>
+        </h2>
+        <div class="container" id="boxes">
+          <div class="box" id="box1"></div>
+          <div class="box" id="box2"></div>
+          <div class="box" id="box3"></div>
+          <div class="box" id="box4"></div>
+          <div class="box" id="box5"></div>
+          <div class="box" id="box6"></div>
+          <div class="box" id="box7"></div>
+          <div class="box" id="box8"></div>
+          <div class="box" id="box9"></div>
+        </div>
+        <h2 style="text-align: center">
+          Winner:
+          <div id="winner"></div>
+        </h2>
+        <div style="position: relative">
+          <button class="restart" id="restart">Restart</button>
+        </div>
+      </div>
+    </div>
+    <h3>Rules :</h3>
+    <h4>
+      <ul>
+        <li>It is a 2 player game.</li>
+        <li>Each post can stack 3 dots.</li>
+        <li>The game starts after each player gets one post.</li>
+        <li>Post explodes after stacking 3 dots.</li>
+        <li>
+          After the game starts if there is no post of one color, the other
+          player wins.
+        </li>
+        <li>
+          After exploding, it takes nearby posts as well. The nearby posts may
+          also explode if 3 dots are already present causing a chain reaction.
+        </li>
+      </ul>
+    </h4>
+    <script src="./script.js"></script>
+  </body>
+</html>

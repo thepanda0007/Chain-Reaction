@@ -1,0 +1,154 @@
+html * {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.box {
+  height: 4rem;
+  width: 4rem;
+
+  display: inline-block;
+  margin-left: -4px;
+  margin-top: -4px;
+
+  border: solid #184d47;
+  border-width: 1px;
+  position: relative;
+}
+
+.container {
+  margin-left: 5px;
+  width: 14rem;
+}
+
+.redcircle {
+  height: 1rem;
+  width: 1rem;
+  background-color: #ff0000;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+.bluecircle {
+  height: 1rem;
+  width: 1rem;
+  background-color: #5272f2;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+
+.circle1 {
+  left: 50%;
+}
+
+.circle2 {
+  left: 30%;
+}
+
+.circle3 {
+  top: 15%;
+  left: 40%;
+}
+
+#turn {
+  display: inline;
+}
+#winner {
+  display: inline;
+}
+
+.red {
+  color: #ff0000;
+}
+.blue {
+  color: #5272f2;
+}
+.yellow {
+  color: #ff004d;
+}
+.green {
+  color: #52057b;
+}
+
+body {
+  background-color: #dbf6e9;
+}
+
+.everything {
+  display: flex;
+  justify-content: center;
+}
+
+.restart {
+  border: 1px solid #184d47;
+  background-color: #8ecddd;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 1em;
+  position: absolute;
+  left: 30%;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-left: 35px;
+    width: 20rem;
+  }
+  .box {
+    height: 6rem;
+    width: 6rem;
+
+    display: inline-block;
+    margin-left: -4px;
+    margin-top: -4px;
+
+    border: solid #184d47;
+    border-width: 1px;
+    position: relative;
+  }
+  .redcircle {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ff0000;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  .bluecircle {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #5272f2;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+
+  .circle1 {
+    left: 50%;
+  }
+
+  .circle2 {
+    left: 30%;
+  }
+
+  .circle3 {
+    top: 15%;
+    left: 40%;
+  }
+
+  .restart {
+    height: 2rem;
+    width: 6rem;
+    position: absolute;
+    left: 35%;
+  }
+}
